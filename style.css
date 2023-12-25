@@ -1,0 +1,213 @@
+.topSection{
+    margin: auto;
+    width: 1280px; 
+    height: 485px; 
+    display: flex;
+    justify-content:center; 
+    align-items:center; 
+    gap: 67px; 
+}
+
+.topText1{
+    width: 612px;
+    color: black; 
+    font-size: 62px; 
+    font-family: Rubik; 
+    font-weight: 500; 
+    line-height: 66px; 
+    word-wrap: break-word
+}
+
+.topText2{
+    width: 612px; 
+    margin-top: 40px;
+    color: black; 
+    font-size: 30px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.dropdownCover{
+    border-radius: 10px; 
+    border: 2px black solid;
+    margin-bottom: 16px;
+    margin-top: 60px;
+}
+
+.dropdownCover.active{
+     border: 2px #AE1F00 solid;
+}
+
+.dropdownLegend{
+    color: black; 
+    font-size: 32px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.dropdownLegend.active{
+    color: #AE1F00;
+}
+
+.alertMsg{
+    display: none;
+    color: #AE1F00;
+    font-size: 18px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+#hostels{
+    outline: none;
+    border: none;
+    width: 612px;
+}
+
+.centerText{
+    margin: auto;
+    width: 776px; 
+    color: black; 
+    font-size: 48px; 
+    font-family: Nunito; 
+    font-weight: 500; 
+    word-wrap: break-word; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+
+.loginButton{
+    width: 630px; 
+    height: 67px;
+    border-radius: 10px;
+    background: #3F3D56;
+    outline: none;
+    border: none;
+    color: white; 
+    font-size: 32px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    cursor: pointer;
+    word-wrap: break-word
+}
+
+
+
+.allProcess{
+    margin: auto;
+    width: 1279px;
+    display: flex;
+}
+.process{
+    width: 426.33px;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D8E9E8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.processInside{
+    width: 288px; 
+    height: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.processText{
+    margin-left: 24px;
+}
+
+.processTextTop{
+    color: black; 
+    font-size: 30px; 
+    font-family: Nunito; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+
+.processTextBottom{
+    margin-top: 30px;
+    color: black; 
+    font-size: 24px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.select-menu{
+    width: 630px;
+    position: relative;
+}
+
+.sBtn-text{
+    width: 100%; 
+    color: #959595; 
+    font-size: 20px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.select-menu .select-btn{
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.select-btn img{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn img{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    width: 95%;
+    position: absolute;
+    overflow:visible;
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.option .option-text{
+    
+    color: black;
+    font-size: 24px; 
+    font-family: Nunito; 
+    font-weight: 400; 
+}
