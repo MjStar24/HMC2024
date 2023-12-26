@@ -1,60 +1,100 @@
-.topSection{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.logo{
+    margin-bottom: 2%;
+}
+
+.landingPage{
+    margin: 2%;
+}
+
+.landingPage-topSection{
     margin: auto;
-    width: 1280px; 
-    height: 485px; 
+    width: 90%; 
+    max-height: 29%;
+    height: 29%; 
     display: flex;
     justify-content:center; 
     align-items:center; 
-    gap: 67px; 
+    gap: 5%; 
 }
 
-.topText1{
-    width: 612px;
+.landingPage-topRightSection,.landingPage-topLeftImg{
+    width: 50%;
+}
+.landingPage-topLeftImg{
+    max-width: 100%; 
+    max-height: 100%; 
+    overflow: hidden;
+}
+
+.landingPage-topLeftImg img{
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+
+.landingPage-topText1{
+    width: 100%;
+    height: 36%;
     color: black; 
-    font-size: 62px; 
+    font-size: 6.2rem; 
     font-family: Rubik; 
     font-weight: 500; 
-    line-height: 66px; 
     word-wrap: break-word
 }
 
-.topText2{
-    width: 612px; 
-    margin-top: 40px;
+.landingPage-topText2{
+    width: 100%; 
+    margin-top: 10%;
     color: black; 
-    font-size: 30px; 
+    font-size: 3rem; 
     font-family: Nunito; 
     font-weight: 400; 
     word-wrap: break-word
 }
 
-.dropdownCover{
+.landingPage-dropdownCover{
+    padding: 0 10px 5px;
     border-radius: 10px; 
     border: 2px black solid;
     margin-bottom: 16px;
-    margin-top: 60px;
+    margin-top: 7%;
 }
 
-.dropdownCover.active{
+.landingPage-dropdownCover.active{
      border: 2px #AE1F00 solid;
 }
 
-.dropdownLegend{
+.landingPage-dropdownLegend{
     color: black; 
-    font-size: 32px; 
+    font-size: 3.2rem; 
     font-family: Nunito; 
     font-weight: 400; 
     word-wrap: break-word
 }
 
-.dropdownLegend.active{
+.landingPage-dropdownLegend.active{
     color: #AE1F00;
 }
 
-.alertMsg{
+.landingPage-alertMsg{
     display: none;
     color: #AE1F00;
-    font-size: 18px; 
+    font-size: 1.8rem; 
     font-family: Nunito; 
     font-weight: 400; 
     word-wrap: break-word
@@ -63,103 +103,31 @@
 #hostels{
     outline: none;
     border: none;
-    width: 612px;
-}
-
-.centerText{
-    margin: auto;
-    width: 776px; 
-    color: black; 
-    font-size: 48px; 
-    font-family: Nunito; 
-    font-weight: 500; 
-    word-wrap: break-word; 
-    margin-top: 80px;
-    margin-bottom: 80px;
-    
-}
-
-.loginButton{
-    width: 630px; 
-    height: 67px;
-    border-radius: 10px;
-    background: #3F3D56;
-    outline: none;
-    border: none;
-    color: white; 
-    font-size: 32px; 
-    font-family: Nunito; 
-    font-weight: 400; 
-    cursor: pointer;
-    word-wrap: break-word
+    width: 100%;
 }
 
 
 
-.allProcess{
-    margin: auto;
-    width: 1279px;
-    display: flex;
-}
-.process{
-    width: 426.33px;
-    height: 300px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #D8E9E8;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px
-}
-
-.processInside{
-    width: 288px; 
-    height: 159px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.processText{
-    margin-left: 24px;
-}
-
-.processTextTop{
-    color: black; 
-    font-size: 30px; 
-    font-family: Nunito; 
-    font-weight: 600; 
-    word-wrap: break-word
-}
-
-.processTextBottom{
-    margin-top: 30px;
-    color: black; 
-    font-size: 24px; 
-    font-family: Nunito; 
-    font-weight: 400; 
-    word-wrap: break-word
-}
-
-.select-menu{
-    width: 630px;
+.landingPage-select-menu{
+    width: 100%;
+    height: 18%;
     position: relative;
 }
 
-.sBtn-text{
+.landingPage-sBtn-text{
     width: 100%; 
     color: #959595; 
-    font-size: 20px; 
+    font-size: 2rem; 
     font-family: Nunito; 
     font-weight: 400; 
     word-wrap: break-word
 }
 
-.select-menu .select-btn{
+.landingPage-select-menu .landingPage-select-btn{
     display: flex;
     background: #fff;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     border-radius: 8px;
     align-items: center;
@@ -168,17 +136,17 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.select-btn img{
-    font-size: 25px;
+.landingPage-select-btn img{
+    font-size: 2.5rem;
     transition: 0.3s;
 }
 
-.select-menu.active .select-btn img{
+.landingPage-select-menu.active .landingPage-select-btn img{
     transform: rotate(-180deg);
 }
 
-.select-menu .options{
-    width: 95%;
+.landingPage-select-menu .landingPage-options{
+    width: 100%;
     position: absolute;
     overflow:visible;
     padding: 20px;
@@ -188,10 +156,10 @@
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
     display: none;
 }
-.select-menu.active .options{
+.landingPage-select-menu.active .landingPage-options{
     display: block;
 }
-.options .option{
+.landingPage-options .landingPage-option{
     display: flex;
     height: 55px;
     cursor: pointer;
@@ -200,14 +168,227 @@
     align-items: center;
     background: #fff;
 }
-.options .option:hover{
+.landingPage-options .landingPage-option:hover{
     background: #F2F2F2;
 }
 
-.option .option-text{
+.landingPage-option .landingPage-option-text{
     
     color: black;
-    font-size: 24px; 
+    font-size: 2.4rem; 
     font-family: Nunito; 
     font-weight: 400; 
+}
+
+
+.landingPage-loginButton{
+    width: 100%; 
+    height: 17%;
+    border-radius: 10px;
+    padding: 2%;
+    background: #3F3D56;
+    outline: none;
+    border: none;
+    color: white; 
+    font-size: 3.2rem; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    cursor: pointer;
+    word-wrap: break-word
+}
+
+
+
+.centerText{
+    margin: 5% auto;
+    max-width: 80%; 
+    color: black; 
+    font-size: 4.8rem; 
+    font-family: Nunito; 
+    font-weight: 500; 
+    word-wrap: break-word; 
+    text-align: center;
+}
+
+
+.landingPage-allProcess{
+    margin: auto;
+    width: 80%;
+    height: 18%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.landingPage-process{
+    width: 33.33%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D8E9E8;
+    border-radius: 10px;
+}
+
+.landingPage-processInside{
+    width: 100%; 
+    padding:10%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.landingPage-processText{
+    margin-left: 10%;
+    width: 70%;
+}
+
+.landingPage-processTextTop{
+    width: 100%;
+    color: black; 
+    font-size: 3rem; 
+    font-family: Nunito; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+
+.landingPage-processTextBottom{
+    width: 100%;
+    margin-top: 10%;
+    color: black; 
+    font-size: 2.4rem; 
+    font-family: Nunito; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+
+
+@media (max-width:1200px) {
+    .landingPage-topText1{
+        font-size: 5.5rem;
+    }
+    .landingPage-topText2{
+        font-size: 2.5rem;
+    }
+    .centerText{
+        width: 100%;
+        font-size: 4rem;
+    }
+    .landingPage-processTextTop{
+        font-size: 2.5rem;
+    }
+    .landingPage-processTextBottom{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:1040px) {
+    .landingPage-topText1{
+        font-size: 3.5rem;
+    }
+    .landingPage-topText2{
+        font-size: 2rem;
+    }
+    .centerText{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .landingPage-processTextTop{
+        font-size: 2rem;
+    }
+    .landingPage-processTextBottom{
+        font-size: 1.5rem;
+    }
+    .dropdownLegend{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .landingPage-allProcess {
+        display: inline;
+        width: 100%; 
+    }
+
+    .landingPage-process {
+        width: 100%; 
+    }
+
+    .centerText{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .landingPage-topLeftImg{
+        display: none;
+    }
+    .landingPage-topRightSection{
+        width: 100%;
+    }
+    .landingPage-topText1,.landingPage-topText2{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    .landingPage-topText2{
+        margin-top: 5%;
+    }
+
+    .landingPage-topText1{
+        font-size: 3.5rem;
+    }
+    .landingPage-dropdownLegend{
+        font-size: 2.5rem;
+    }
+    .landingPage-processTextTop{
+        font-size: 2.5rem;
+    }
+    .landingPage-processTextBottom{
+        font-size: 2rem;
+    }
+    .landingPage-stepImage img{
+        height: 130px;
+        object-fit: contain;
+        width: 100%;
+    }
+    
+    .landingPage-processInside{
+        padding: 5% 8%;
+    }
+}
+
+@media (max-width:500px) {
+    .landingPage-topText1,.landingPage-topText2{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .landingPage-topText1{
+        font-size: 3.2rem;
+    }
+    .landingPage-dropdownLegend{
+        font-size: 2rem;
+    }
+    .landingPage-allProcess{
+        height: 10%;
+    }
+    .landingPage-processTextTop{
+        font-size: 2rem;
+    }
+    .landingPage-processTextBottom{
+        font-size: 1.5rem;
+    }
+    .landingPage-stepImage img{
+        height: 100px;
+        object-fit: contain;
+        width: 100%;
+    }
+    .landingPage-loginButton{
+        font-size: 2rem;
+    }
+    .centerText{
+        font-size: 2rem;
+    }
+    .landingPage-processInside{
+        padding: 5% 8%;
+    }
 }

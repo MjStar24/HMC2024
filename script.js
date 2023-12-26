@@ -1,11 +1,11 @@
-const optionMenu = document.querySelector(".select-menu"),
-       selectBtn = optionMenu.querySelector(".select-btn"),
-       options = optionMenu.querySelectorAll(".option"),
-       sBtn_text = optionMenu.querySelector(".sBtn-text"),
-       loginBtn=document.querySelector(".loginButton"),
-       dropdownCover=document.querySelector(".dropdownCover"),
-       dropdownLegend=dropdownCover.querySelector(".dropdownLegend"),
-       alertMsg=document.querySelector(".alertMsg");
+const optionMenu = document.querySelector(".landingPage-select-menu"),
+       selectBtn = optionMenu.querySelector(".landingPage-select-btn"),
+       options = optionMenu.querySelectorAll(".landingPage-option"),
+       sBtn_text = optionMenu.querySelector(".landingPage-sBtn-text"),
+       loginBtn=document.querySelector(".landingPage-loginButton"),
+       dropdownCover=document.querySelector(".landingPage-dropdownCover"),
+       dropdownLegend=dropdownCover.querySelector(".landingPage-dropdownLegend"),
+       alertMsg=document.querySelector(".landingPage-alertMsg");
 
 
 
@@ -19,7 +19,7 @@ selectBtn.addEventListener("click", () => {
 let selectedOption;
 options.forEach(option =>{
     option.addEventListener("click", ()=>{
-        selectedOption = option.querySelector(".option-text").innerText;
+        selectedOption = option.querySelector(".landingPage-option-text").innerText;
         sBtn_text.innerText = selectedOption;
         optionMenu.classList.remove("active");
     });
